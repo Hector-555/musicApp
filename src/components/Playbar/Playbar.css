@@ -1,0 +1,149 @@
+.playbar {
+  position: fixed;
+  background-color: #9340fe;
+
+  width: calc(100vw - 40px);
+  height: 70px;
+
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.playbar > p {
+  font-size: 14px;
+}
+
+.playbar * {
+  color: white;
+}
+
+.preview {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.credits {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  letter-spacing: 2px;
+}
+
+.credits > p {
+  font-size: 14px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-basis: 600px;
+  margin-left: auto;
+}
+
+.button {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.button img {
+  width: 40%;
+}
+
+.progress {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+input[type=range]  {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  height: 15px;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 15px;
+  background-color: blue;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: #ecf0f1;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  margin-top: 0px;
+  box-shadow: -400px  0 0 400px  #43e5f7;
+}
+
+input[type=range]::-moz-range-track {
+    height: 15px;
+    background-color: blue;
+}
+
+
+input[type=range]::-moz-range-thumb {
+  background: #ecf0f1;
+  cursor: pointer;
+  height: 15px;
+  border-radius:0px;
+  box-shadow: -400px  0px 0px 400px #43e5f7;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+@media (max-width: 1000px) {
+  .slider {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  .playbar {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 685px) {
+  .slider {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .credits {
+    letter-spacing: 1px;
+  } */
+
+  .preview {
+    width: 45px;
+    height: 45px;
+  }
+
+  .playbar {
+    height: 90px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .slider {
+    flex-basis: 100%;
+  }
+}

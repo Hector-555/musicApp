@@ -1,0 +1,105 @@
+.track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.track b {
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: black;
+}
+
+.track p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #9e9e9e;
+}
+
+.credits {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.preview {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.button {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.button img {
+  width: 40%;
+}
+
+.playing > .credits * {
+  color: #9340fe;
+}
+
+
+
+@media (max-width: 685px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  .track {
+    width: 95%;
+    gap: 10px;
+  }
+
+  .input {
+    margin: 10px 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .input {
+    margin: 10px 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .input {
+    margin: 10px 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .input {
+    margin: 10px 3vw;
+  }
+
+  .track {
+    gap: 5px;
+  }
+
+  .track b {
+    font-size: 13px;
+  }
+
+  .track p {
+    font-size: 12px;
+  }
+
+  .list {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 385px) {
+  .input {
+    width: 75vw;
+  }
+}
